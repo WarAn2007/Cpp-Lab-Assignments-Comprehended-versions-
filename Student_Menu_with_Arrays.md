@@ -1,4 +1,4 @@
-Colapsed verion of Students list to add, delete, insert students, sort by id in asdending order, display whole list and finally exit(28 rows)
+# Colapsed verion of Students list to add, delete, insert students, sort by id in asdending order, display whole list and finally exit(28 rows)
 ```cpp
 #include <iostream>
 using namespace std;
@@ -30,7 +30,7 @@ int main() {int choice1, id, position;
 	} while (choice1 != 7);return 0;}
 ```
 
-More detailed version(122 rows)
+# More detailed version(122 rows)
 ```cpp
 #include <iostream>
 using namespace std;
