@@ -135,14 +135,16 @@ void DeleteS(Student student[], int &Count){ // Delete Student by ID
 	bool found = false;
 	cout << "Enter Student's ID to delete: ";
 	cin >> id;
-	for(int i = 0; i < Count; i++){
-		if(student[i].id == id){
+	for(int i = 0; i <= Count; i++){
+		if(id == student[i].id){
 			found = true;
-			student[i].id = student[i+1].id;
-			student[i].name = student[i+1].name;
-			student[i].faculty = student[i+1].faculty;
-			student[i].gpa = student[i+1].gpa;
-			student[i].contact = student[i+1].contact;
+			for (int j = i; j < Count-1; j++) {
+				student[j].id = student[j+1].id;
+				student[j].name = student[j+1].name;
+				student[j].faculty = student[j+1].faculty;
+				student[j].gpa = student[j+1].gpa;
+				student[j].contact = student[j+1].contact;
+			}
 			Count --;
 			cout << "Student Deleted Successefuly\n";
 			break;
